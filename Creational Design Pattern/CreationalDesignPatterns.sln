@@ -11,6 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryPattern", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern\SingletonPattern.csproj", "{729E741E-BEF5-4446-9CAC-D3AA011F23B6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diff Btwn difference type of Factory", "Diff Btwn difference type of Factory", "{F89BBB87-144A-440B-B8CD-D63DE264DC70}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Interview\Software design\Diff of Factory, Factory and Abstract Factory.docx = ..\..\..\..\Interview\Software design\Diff of Factory, Factory and Abstract Factory.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
