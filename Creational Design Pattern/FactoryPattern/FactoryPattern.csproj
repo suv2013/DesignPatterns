@@ -52,7 +52,7 @@
     <Compile Include="CreditCards\Platinum.cs" />
     <Compile Include="CreditCards\Titanium.cs" />
     <Compile Include="Factory\CreditCardfactory.cs" />
-    <Compile Include="ICreditCard.cs" />
+    <Compile Include="Interface\ICreditCard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
