@@ -1,12 +1,13 @@
 ﻿using FactoryMethodPattern.CreditCards;
+using FactoryMethodPattern.Interface;
 
 namespace FactoryMethodPattern.FactoryMethod.Concrete_Factory
 {
     public class MoneyBackFactory : CreditCardFactory
     {
-        protected override CreditCard MakeProduct()
+        protected override ICreditCard MakeProduct()
         {
-            CreditCard moneyBackCard = new MoneyBack();
+            ICreditCard moneyBackCard = new MoneyBack();
             return moneyBackCard;
         }
     }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryMethodPattern
+namespace FactoryMethodPattern.Interface
 {
-    public interface CreditCard
+    public interface ICreditCard
     {
         string GetCardType();
         int GetCreditLimit();

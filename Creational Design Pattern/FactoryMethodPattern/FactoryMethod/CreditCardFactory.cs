@@ -1,12 +1,14 @@
-﻿namespace FactoryMethodPattern.FactoryMethod
+﻿using FactoryMethodPattern.Interface;
+
+namespace FactoryMethodPattern.FactoryMethod
 {
     public abstract class CreditCardFactory
     {
-        protected abstract CreditCard MakeProduct();
+        protected abstract ICreditCard MakeProduct();
 
-        public CreditCard CreateProduct()
+        public ICreditCard CreateProduct()
         {
-            CreditCard creditCard = this.MakeProduct();
+            ICreditCard creditCard = this.MakeProduct();
             return creditCard;
         }
     }

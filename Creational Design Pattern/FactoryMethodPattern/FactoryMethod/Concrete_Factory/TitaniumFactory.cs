@@ -1,12 +1,13 @@
 ﻿using FactoryMethodPattern.CreditCards;
+using FactoryMethodPattern.Interface;
 
 namespace FactoryMethodPattern.FactoryMethod.Concrete_Factory
 {
     public class TitaniumFactory : CreditCardFactory
     {
-        protected override CreditCard MakeProduct()
+        protected override ICreditCard MakeProduct()
         {
-            CreditCard titaniumCard = new Titanium();
+            ICreditCard titaniumCard = new Titanium();
             return titaniumCard;
         }
     }

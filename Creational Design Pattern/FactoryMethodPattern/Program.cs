@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using FactoryMethodPattern;
 using FactoryMethodPattern.FactoryMethod;
 using FactoryMethodPattern.FactoryMethod.Concrete_Factory;
+using FactoryMethodPattern.Interface;
 
 Console.WriteLine("Hello, Factory Method Pattern!\n");
 
 Console.WriteLine("Creating Platium Card!\n");
-CreditCard platiumCreditCard = new PlatiumFactory().CreateProduct();
+ICreditCard platiumCreditCard = new PlatiumFactory().CreateProduct();
 if(platiumCreditCard != null )
 {
     Console.WriteLine("CreditCard Type : " + platiumCreditCard.GetCardType());
@@ -20,7 +20,7 @@ else
 Console.WriteLine("--------------");
 
 Console.WriteLine("Creating Titanium Card!\n");
-CreditCard titaniumCreditCard = new TitaniumFactory().CreateProduct();
+ICreditCard titaniumCreditCard = new TitaniumFactory().CreateProduct();
 if (titaniumCreditCard != null)
 {
     Console.WriteLine("CreditCard Type : " +   titaniumCreditCard.GetCardType());
@@ -34,7 +34,7 @@ else
 Console.WriteLine("--------------");
 
 Console.WriteLine("Creating MoneyBack Card!\n");
-CreditCard moneyBackCreditCard = new MoneyBackFactory().CreateProduct();
+ICreditCard moneyBackCreditCard = new MoneyBackFactory().CreateProduct();
 if (titaniumCreditCard != null)
 {
     Console.WriteLine("CreditCard Type : " + moneyBackCreditCard.GetCardType());

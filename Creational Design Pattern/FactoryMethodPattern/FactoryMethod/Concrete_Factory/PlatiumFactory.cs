@@ -1,12 +1,13 @@
 ﻿using FactoryMethodPattern.CreditCards;
+using FactoryMethodPattern.Interface;
 
 namespace FactoryMethodPattern.FactoryMethod.Concrete_Factory
 {
     public class PlatiumFactory : CreditCardFactory
     {
-        protected override CreditCard MakeProduct()
+        protected override ICreditCard MakeProduct()
         {
-            CreditCard platinumCard = new Platinum();
+            ICreditCard platinumCard = new Platinum();
             return platinumCard;
         }
     }
